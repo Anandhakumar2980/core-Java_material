@@ -1,3 +1,50 @@
+# Java 8 Features
+
+# Java 8 - Streams API
+## Introduction 
+## Types
+1. intermediate operations
+2. terminal operations
+
+## Intermediate Operations
+### filter:
+
+It takes a predicate (a boolean-valued function) and returns a stream that includes only the elements satisfying the predicate.
+
+'
+List<Employee> employees = Stream.of(empIds)
+      .map(employeeRepository::findById)
+      .filter(e -> e != null)
+      .filter(e -> e.getSalary() > 200000)
+      .collect(Collectors.toList();
+  '
+
+
+map: It takes a function and transforms each element of the stream into another element according to the provided function.
+
+flatMap: It is similar to map, but it flattens the resulting stream of each element into a single stream. It is useful when you have nested collections or when you want to remove empty/null values.
+
+distinct: It returns a stream with unique elements by eliminating duplicates based on the equals method.
+
+sorted: It sorts the elements of the stream based on their natural order or a specified comparator.
+
+limit: It returns a stream that is truncated to a specified maximum size.
+
+skip: It returns a stream that skips a specified number of elements from the beginning.
+
+peek: It allows you to perform a non-destructive action on each element of the stream without modifying the stream itself. It can be useful for debugging or logging purposes.
+
+unordered: It returns an unordered stream, which means the elements can be processed in an arbitrary order. This operation can improve performance in some cases.
+
+skip: It returns a stream that skips a specified number of elements from the beginning. It discards the initial elements and returns a new stream with the remaining elements.
+
+takeWhile: It returns a stream that consists of the longest prefix of elements that satisfy a given predicate. It stops processing elements as soon as the predicate evaluates to false.
+
+dropWhile: It returns a stream that discards the longest prefix of elements that satisfy a given predicate. It skips elements until the predicate evaluates to false and returns the remaining elements.
+
+parallel: It returns a parallel stream, which can leverage multiple threads for concurrent processing. It can potentially improve performance on large data sets.
+
+
 # Core Java Topics 
 
 Variables and data types<br>
