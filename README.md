@@ -7,24 +7,12 @@
 - Access modifiers is used to __control the visibility or accessibility__ of classes, methods, and variables.
 - There are four types of access modifiers in Java <br>
      1. __public:__ The public access modifier allows classes, methods, and variables to be accessed from anywhere in the program, within the same package or from any other package.
-
-     2. __private:__ The private access modifier is accessible only within the class.
-
-``` class A{  
-private int data=40;  
-private void msg(){System.out.println("Hello java");}  
-}  
-  
-public class Simple{  
- public static void main(String args[]){  
-   A obj=new A();  
-   System.out.println(obj.data);//Compile Time Error  
-   obj.msg();//Compile Time Error  
-   }  
-}  ```
-     4. __protected:__ The protected access modifier allows access to the class, method, or variable within the same package and by subclasses (even if they are in different packages).
-
-     5. __default (no modifier):__ If no access modifier is specified, it is considered to have default access. It allows access to the class, method, or variable within the same package but not from outside the package.
+     2. __protected:__ The protected access modifier allows access to the class, method, or variable within the same package and by subclasses (even if they are in different packages).
+     4. __default (no modifier):__ If no access modifier is specified, it is considered to have default access. It allows access to the class, method, or variable within the same package but not from outside the package.
+     2. __private:__ <br>
+                    The private access modifier is __accessible only within the class.__ <br>
+                    If you __make any class constructor private, you cannot create the instance of that class__ from outside the class. <br>
+                    If we not folow the above, it will __throw an compile time error__.
 ### Non - Access Modifiers 
 
 # Java 8 Features
