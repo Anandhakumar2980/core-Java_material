@@ -1,18 +1,28 @@
 # CORE JAVA TOPICS
 
 ## Access and Non-access Modifiers in Java
+
 ![image](https://github.com/Anandhakumar2980/core-Java_material/assets/126327213/34c12442-8970-4c03-b42f-aa6dea938f9b)
 ![image](https://github.com/Anandhakumar2980/core-Java_material/assets/126327213/51d66b10-e621-4979-9890-1604e335f4d3)
 ### Access Modifiers 
 - Access modifiers is used to __control the visibility or accessibility__ of classes, methods, and variables.
 - There are four types of access modifiers in Java <br>
-     1. __public:__ The public access modifier allows classes, methods, and variables to be accessed from anywhere in the program, within the same package or from any other package.
-     2. __protected:__ The protected access modifier allows access to the class, method, or variable within the same package and by subclasses (even if they are in different packages).
-     4. __default (no modifier):__ If no access modifier is specified, it is considered to have default access. It allows access to the class, method, or variable within the same package but not from outside the package.
-     2. __private:__ <br>
+     1. __public:__ The public access modifier allows classes, methods, and variables to be __accessed from anywhere__ in the program, within the same package or from any other package.
+     2. __protected:__ The protected access modifier allows access to the class, method, or variable __within the same package and by subclasses (even if they are in different packages)__.
+     3. __default (no modifier):__ If no access modifier is specified, it is considered to have default access. It allows access to the class, method, or variable __within the same package only__ but not from outside the package.
+     4. __private:__ <br>
                     The private access modifier is __accessible only within the class.__ <br>
                     If you __make any class constructor private, you cannot create the instance of that class__ from outside the class. <br>
-                    If we not folow the above, it will __throw an compile time error__.
+                    If a __class is declared as private__, it __cannot be extended__ by any other class. it will __throw an compilation error__.<br>
+                    If a __method is declared as private__, it __cannot be overridden__ by subclasses. it will __throw an compilation error__.<br>
+                    If we use any private variable or method in another class, it will __throw an compilation error__.
+#### Examples of Access MOdifiers
+<details>
+  <summary>Click to expand draggable content</summary>
+     
+  ![image](https://github.com/Anandhakumar2980/core-Java_material/assets/126327213/a634f2e8-cecf-41d1-8e53-ddea9b4576c6)
+</details>
+
 ### Non - Access Modifiers 
 
 # Java 8 Features
